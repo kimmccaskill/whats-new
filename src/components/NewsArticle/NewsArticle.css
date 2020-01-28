@@ -1,5 +1,5 @@
 .article-card {
-  height: 35%;
+  min-height: 50vh;
   width: 25%;
   border: white solid 1px;
   margin: 10px;

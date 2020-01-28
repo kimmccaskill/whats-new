@@ -18,7 +18,7 @@ class App extends Component {
         Local: {data: local},
         Science: {data: science},
         Technology: {data: technology}},
-      articleShown: {data: local}
+      articleShown: {data: [...entertainment, ...health, ...local, ...science, ...technology]}
     }
   }
 
