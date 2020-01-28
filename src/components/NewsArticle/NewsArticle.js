@@ -9,6 +9,7 @@ function NewsArticle(props) {
       <div>
         <h3>{props.headline}</h3>
         <p>{props.description}</p>
+        <a href={props.url}>Check it out</a>
       </div>
     </div>
   )
