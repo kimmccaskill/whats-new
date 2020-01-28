@@ -8,7 +8,7 @@ function NewsArticle(props) {
       <img className="card-image" src={props.image} alt={props.headline} />
       <div>
         <h3>{props.headline}</h3>
-        <p>{props.description}</p>
+        <p className="card-description">{props.description}</p>
         <a href={props.url}>Check it out</a>
       </div>
     </div>
