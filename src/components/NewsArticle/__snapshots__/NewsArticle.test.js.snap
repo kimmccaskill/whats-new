@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsArticle should match the snapshot with all data passed in correctly 1`] = `
+<div
+  className="article-card"
+>
+  <img
+    alt="Jimmy trapped in well"
+    className="card-image"
+    src="https://i0.wp.com/wp-cpr.s3.amazonaws.com/uploads/2019/09/cpr-swolf_black-cube-monumental_DSC8170.jpg?resize=2064,1376"
+  />
+  <div>
+    <h3>
+      Jimmy trapped in well
+    </h3>
+    <p
+      className="card-description"
+    >
+      Boy named Jimmy well down well.  Found by dog.
+    </p>
+    <a
+      href="https://www.cpr.org/2019/09/27/giant-chicken-skeleton-in-denvers-central-library-stands-for-more-than-just-dinner/"
+    >
+      Check it out
+    </a>
+  </div>
+</div>
+`;
