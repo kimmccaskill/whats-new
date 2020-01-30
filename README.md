@@ -12,14 +12,11 @@
 ### Overview of Site:
 - This application is a news application that displays news articles received from an API
 - The user has ability to filter news articles by category or using the search bar to find articles containing a specific word
-- The site can be tested for accessibility via Chrome Dev tools running accessibility audits.
 
 ### Technologies Used:
-- HTML
-- CSS/Sass
-- Javascript/jQuery
-- Mocha/Chai
-- git
+- Javascript/React
+- HTML/CSS
+- Jest/Enzyme
 
 ## Setup
 
@@ -42,15 +39,7 @@ In the terminal, run:
 npm start
 ```
 
-You will see a bunch of lines output to your terminal. One of those lines will be something like:
-
-```bash
-Project is running at http://localhost:8080/
-```
-
-Go to `http://localhost:8080/` in your browser to view code running in the browser.
-
----
+Browser should open up with localhost:3000
 
 
 ## Running Tests
@@ -63,12 +52,6 @@ npm test
 
 The test results will output to the terminal.
 
-### Login Page
-<img width="1435" alt="Screen Shot 2020-01-14 at 9 45 28 PM" src="https://user-images.githubusercontent.com/54483332/72405744-2f908f80-3717-11ea-86c6-1ceaac43caf7.png">
+### What's New?
+<img width="1440" alt="Screen Shot 2020-01-30 at 4 02 27 PM" src="https://user-images.githubusercontent.com/54483332/73498227-eb89c580-4379-11ea-81e3-4a7e4ba2f4b7.png">
 
-### Customer Dashboard
-<img width="1435" alt="Screen Shot 2020-01-14 at 9 45 55 PM" src="https://user-images.githubusercontent.com/54483332/72405768-40410580-3717-11ea-895c-a82687afb643.png">
-<img width="1435" alt="Screen Shot 2020-01-14 at 9 46 15 PM" src="https://user-images.githubusercontent.com/54483332/72405785-4c2cc780-3717-11ea-89fc-dad634d7cf27.png">
-
-### Manager Dashboard
-<img width="1435" alt="Screen Shot 2020-01-14 at 9 48 12 PM" src="https://user-images.githubusercontent.com/54483332/72405858-9150f980-3717-11ea-89a9-1088908630d4.png">
