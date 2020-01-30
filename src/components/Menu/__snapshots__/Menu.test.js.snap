@@ -2,10 +2,57 @@
 
 exports[`Menu should match the snapshot with all data passed in correctly 1`] = `
 <aside
-  className="nav-bar"
+  className="menu"
 >
-  <h1>
+  <h1
+    className="title"
+  >
     What's New?
   </h1>
+  <button
+    className="menu-btns"
+    key="0.4457381173571864"
+    onClick={[MockFunction]}
+    type="button"
+    value="Entertainment"
+  >
+    Entertainment
+  </button>
+  <button
+    className="menu-btns"
+    key="0.5314266581461511"
+    onClick={[MockFunction]}
+    type="button"
+    value="Health"
+  >
+    Health
+  </button>
+  <button
+    className="menu-btns"
+    key="0.639325898946189"
+    onClick={[MockFunction]}
+    type="button"
+    value="Local"
+  >
+    Local
+  </button>
+  <button
+    className="menu-btns"
+    key="0.29706351816457977"
+    onClick={[MockFunction]}
+    type="button"
+    value="Science"
+  >
+    Science
+  </button>
+  <button
+    className="menu-btns"
+    key="0.3092081102344293"
+    onClick={[MockFunction]}
+    type="button"
+    value="Technology"
+  >
+    Technology
+  </button>
 </aside>
 `;
