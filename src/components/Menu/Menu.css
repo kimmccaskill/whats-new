@@ -1,4 +1,4 @@
-.nav-bar {
+.menu {
   color: #fff;
   width: 20%;
   display: flex;
@@ -6,7 +6,17 @@
   align-items: center;
 }
 
+.title {
+  padding: 10%;
+}
+
 .menu-btns {
   width: 90%;
   height: 50px;
+  margin-bottom: 5%;
+  font-size: 1.3em;
+  background: #141527;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
