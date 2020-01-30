@@ -1,9 +1,4 @@
 import React, { Component } from 'react';
-import entertainment from '../../data/entertainment';
-import health from '../../data/health';
-import local from '../../data/local';
-import science from '../../data/science';
-import technology from '../../data/technology';
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer.js'
 import Menu from '../Menu/Menu.js'
@@ -13,14 +8,31 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      categories: {
-        Entertainment : {data: entertainment},
-        Health: {data: health},
-        Local: {data: local},
-        Science: {data: science},
-        Technology: {data: technology}},
-      articleShown: {data: [...entertainment, ...health, ...local, ...science, ...technology]}
+      categories: {},
+      articleShown: {}
     }
+  }
+
+  componentDidMount() {
+    fetch("https://whats-new-api.herokuapp.com/api/v1/news")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          categories: {
+            Entertainment: {data: data.entertainment},
+            Health: {data: data.health},
+            Local: {data: data.local},
+            Science: {data: data.science},
+            Technology: {data: data.technology}
+          },
+          articleShown: {data: [
+            ...data.entertainment,
+            ...data.health,
+            ...data.local,
+            ...data.science,
+            ...data.technology]}
+        })
+      })
   }
 
   changeCategory = (category) => {
