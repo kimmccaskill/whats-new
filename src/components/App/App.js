@@ -19,11 +19,11 @@ class App extends Component {
       .then(data => {
         this.setState({
           categories: {
-            Entertainment: {data: data.entertainment},
-            Health: {data: data.health},
-            Local: {data: data.local},
-            Science: {data: data.science},
-            Technology: {data: data.technology}
+            Entertainment: data.entertainment,
+            Health: data.health,
+            Local: data.local,
+            Science: data.science,
+            Technology: data.technology
           },
           articleShown: {data: [
             ...data.entertainment,
@@ -35,8 +35,8 @@ class App extends Component {
       })
   }
 
-  changeCategory = (category) => {
-    this.setState({articleShown: {data: this.state.categories[category].data}})
+  changeCategory = (event) => {
+    this.setState({articleShown: {data: this.state.categories[event.target.value]}})
   }
 
   filterArticles = (query) =>{
