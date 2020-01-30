@@ -6,7 +6,7 @@ const Menu = (props) => {
     props.changeCategory(event.target.value)
   }
   let navItems = props.data.categories ? Object.keys(props.data.categories) : null;
-  navItems = navItems ? navItems.map(item => <button className="menu-btns" type="button" value={item} onClick={updateArticlesShown}>{item}</button>) : null;
+  navItems = navItems ? navItems.map(item => <button key={Math.random()} className="menu-btns" type="button" value={item} onClick={updateArticlesShown}>{item}</button>) : null;
 
   return(
     <aside className='menu'>
