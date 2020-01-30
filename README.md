@@ -13,6 +13,10 @@
 - This application is a news application that displays news articles received from an API
 - The user has ability to filter news articles by category or using the search bar to find articles containing a specific word
 
+### What's New?
+<img width="1440" alt="Screen Shot 2020-01-30 at 4 02 27 PM" src="https://user-images.githubusercontent.com/54483332/73498227-eb89c580-4379-11ea-81e3-4a7e4ba2f4b7.png">
+
+
 ### Technologies Used:
 - Javascript/React
 - HTML/CSS
@@ -52,6 +56,4 @@ npm test
 
 The test results will output to the terminal.
 
-### What's New?
-<img width="1440" alt="Screen Shot 2020-01-30 at 4 02 27 PM" src="https://user-images.githubusercontent.com/54483332/73498227-eb89c580-4379-11ea-81e3-4a7e4ba2f4b7.png">
 
