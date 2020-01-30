@@ -1,0 +1,19 @@
+.nav-bar {
+  padding: 2% 0 2% 0;
+  display: flex;
+}
+
+.search-input {
+  width: 50%;
+  height: 50px;
+  font-size: 1em;
+  padding: 1%;
+  border-radius: 30px;
+}
+
+.search-btn {
+  border-radius: 30px;
+  margin-left: 10px;
+  width: 20%;
+  font-size: 1em;
+}
