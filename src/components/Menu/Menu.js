@@ -9,8 +9,8 @@ const Menu = (props) => {
   navItems = navItems ? navItems.map(item => <button className="menu-btns" type="button" value={item} onClick={updateArticlesShown}>{item}</button>) : null;
 
   return(
-    <aside className='nav-bar'>
-      <h1>What's New?</h1>
+    <aside className='menu'>
+      <h1 className="title">What's New?</h1>
       {navItems}
     </aside>
   )
