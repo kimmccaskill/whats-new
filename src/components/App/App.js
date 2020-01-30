@@ -7,6 +7,7 @@ import technology from '../../data/technology';
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer.js'
 import Menu from '../Menu/Menu.js'
+import SearchForm from '../SearchForm/SearchForm.js'
 
 class App extends Component {
   constructor() {
@@ -28,10 +29,13 @@ class App extends Component {
 
   render () {
     return (
-      <div className="app">
+      <main className="app">
         <Menu changeCategory={this.changeCategory} data={this.state}/>
-        <NewsContainer news={this.state.articleShown.data}/>
-      </div>
+        <section className="main-section">
+          <SearchForm />
+          <NewsContainer news={this.state.articleShown.data}/>
+        </section>
+      </main>
     );
   }
 }
