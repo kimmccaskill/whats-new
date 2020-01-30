@@ -27,12 +27,17 @@ class App extends Component {
     this.setState({articleShown: {data: this.state.categories[category].data}})
   }
 
+  filterArticles = (query) =>{
+    let filteredArticles = this.state.articleShown.data.filter(article => article.headline.toLowerCase().includes(query.toLowerCase()) || article.description.toLowerCase().includes(query.toLowerCase()));
+    this.setState({articleShown: {data: filteredArticles}})
+  }
+
   render () {
     return (
       <main className="app">
         <Menu changeCategory={this.changeCategory} data={this.state}/>
         <section className="main-section">
-          <SearchForm />
+          <SearchForm filterArticles={this.filterArticles}/>
           <NewsContainer news={this.state.articleShown.data}/>
         </section>
       </main>
